@@ -1,15 +1,21 @@
 /* ==== Google font ==== */
 @import url('http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Montserrat:700|Merriweather:400italic'); 
 
-html {
+html
+{
     width: 100%;
     height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
 }
 
 
 body {
     width: 100%;
     height: 100%;
+    margin: 0px;
+    padding: 0px;
     font-family: 'Lato',sans-serif;
 	font-weight: 300;
     color: #666;
@@ -42,7 +48,7 @@ p.lead {
 
 
 a {
-    color: #28c3ab;
+    color: white;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -51,6 +57,7 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
+    color: darkgray;
 }
 
 ul{
@@ -69,7 +76,7 @@ ul{
 
 .navbar-brand {
     font-weight: 700;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .navbar-brand {
   height: 40px;
@@ -92,15 +99,15 @@ ul{
 .nav.navbar-nav {
     background-color: rgba(255,255,255,.4);
     margin-top: 20px;
-    margin-right: 40px;
+    margin-right: 30px;
 }
 
 .navbar-custom.top-nav-collapse .nav.navbar-nav {
     background-color: rgba(0,0,0,0);
 }
 
-.navbar-custom.top-nav-collapse ul.nav li a {
-	    -webkit-transition: all .2s ease-in-out;
+.navbar-custom.top-nav-collapse ul.nav li a {   
+    -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 	color: #fff;
@@ -135,7 +142,6 @@ ul{
 }
 
 .navbar-toggle {
-    padding: 4px 6px;
     font-size: 14px;
     color: #fff;
 }
@@ -164,7 +170,7 @@ hr {
 
 .home-section {
     padding-top: 110px;
-    padding-bottom: 110px;
+    padding-bottom: 90px;
 	display:block;
     position:relative;
     z-index:120;
@@ -269,14 +275,6 @@ hr {
 }
 
 
-.btn-default:hover,
-.btn-default:focus {
-    border: 1px solid #28c3ab;
-    outline: 0;
-    color: #000;
-    background-color: #28c3ab;
-}
-
 .btn-huge {
     padding: 25px;
     font-size: 26px;
@@ -350,13 +348,39 @@ text-align: center;
 	margin-bottom: 20px;
 }	
 
-#portfolio a{
-    color: skyblue;
-}
-
-#portfolio a:hover{
+#about a{
     color: grey;
 }
+
+#about a:hover{
+    color: lightgrey;
+}
+
+#portfolio a{
+    color: white;
+}
+
+
+.button1 {
+	background-color:#82cdf0;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+}
+.button1:hover {
+	background-color:#518dc2;
+}
+.button1:active {
+	position:relative;
+	top:1px;
+}
+
 
 
 /* ===========================
