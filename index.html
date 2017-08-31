@@ -3,89 +3,67 @@
 
     <head>
         <meta charset="utf-8">
-        <meta name="Hamza Usmani" >
-        
-        <!--ICON -->
-
-       
+        <meta name="Hamza Usmani" >       
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
         <link rel="manifest" href="/manifest.json">
         <meta name="theme-color" content="#ffffff">
-
-        <!-- --> 
         <title>Home</title>
         
-        
-        <!-- jQuery -->
         <script src="js/jquery.js"></script>
-
-        <!-- Bootstrap Core CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-
-        <!-- Fonts -->
-        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href="css/animate.css" rel="stylesheet" />
-
-        <!-- Custom CSS -->
-
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
         <link href="css/style.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/main.css">
+        <link href="css/main.css" rel="stylesheet">
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-       
-            
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+          ga('create', 'UA-90921614-1', 'auto');
+          ga('send', 'pageview');
+        </script>
+      
     </head>
     
      <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
         
          <div id="loader-wrapper">
 			<div id="loader"></div>
-
 			<div class="loader-section section-left"></div>
             <div class="loader-section section-right"></div>
-
 		</div>
          
-         <section id= "topbar">
-        <!-- /navbar --> 
-        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-            <div class="container-fluid">
-                <div class="navbar-header page-scroll">
-                    
-                    <button type="button" class="navbar-toggle">
-                        <i class="fa fa-bars"></i>
-                    </button>
-                    
-                    <a class="navbar-brand" href="index.html">
-                         Hamza Usmani 
-                    </a>
-
-                </div>
-
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse navbar-main-collapse  navbar-right fixed-nav-bar">
-                      <ul class="nav navbar-nav">
-
-                        <li class="active"><a class="smoothScroll" href="#intro">Home</a></li>
-                        <li><a class="smoothScroll" href="#about">About</a></li>
-                        <li><a class="smoothScroll" href="#resume">Resume</a></li>
-                        <li><a class="smoothScroll" href="#portfolio">Projects</a></li>
-                        <li><a class="smoothScroll" href="#contact">Contact</a></li>
-                      </ul>
-
+        <section id= "topbar">
+            <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header page-scroll">
+                        <button type="button" class="navbar-toggle">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <a class="navbar-brand" href="index.html">
+                             Hamza Usmani 
+                        </a>
                     </div>
-
-            </div>
-        </nav> 
+                    <div class="collapse navbar-collapse navbar-main-collapse  navbar-right fixed-nav-bar">
+                          <ul class="nav navbar-nav">
+                            <li class="active"><a class="smoothScroll" href="#intro">Home</a></li>
+                            <li><a class="smoothScroll" href="#about">About</a></li>
+                            <li><a class="smoothScroll" href="#resume">Resume</a></li>
+                            <li><a class="smoothScroll" href="#portfolio">Projects</a></li>
+                            <li><a class="smoothScroll" href="#contact">Contact</a></li>
+                          </ul>
+                    </div>
+                </div>
+            </nav> 
         </section>
          
-         <!-- Section: Intro -->
         <section id="intro" class="intro">
+            <div class="face">
+                <img style= "width:193px; height:180px;" class="head" src="img/head.png"/>  
+            </div>
             
-           <div class="face">
-            <img style= "width:193px; height:180px;" class="head" src="img/head.png"/>  
-           </div>
-            
-           <div class="logo">   
+            <div class="logo">   
             <img style= "width:400px;height:400px;" src= "img/logo.png" />
                <p>Computer Science Student at the <a href="https://cs.uwaterloo.ca/"> University of Waterloo </a> <br> Software and Front-end Developer <br></p>
                 
@@ -96,71 +74,58 @@
             </div>
             </div>
             
-           <div class="page-scroll">
+            <div class="page-scroll">
                 <a href="#about" class="smoothScroll btn btn-circle"> 
                <i class="fa fa-angle-double-down animated"></i>
                 </a>
             </div>
-            
         </section>  
          
-         <!-- Section: about -->
         <section id="about" class="home-section text-center bg-gray">
-		
-		<div class="wow bounceInDown" data-wow-delay="0.4s">
-					<div class="section-heading">
-					<h2>About</h2>
-                    </div>
-		</div>
-		
-		<div class="container">
-		
-            <div class="row">
-				<hr class="marginbot-50">
+    	    <div class="wow bounceInDown" data-wow-delay="0.4s">
+				<div class="section-heading"><h2>About</h2></div>
 		    </div>
-            
-        <div id="aboutrow" class="row">
-            <div class="col-sm-4 col-md-4">
-					
-				<img style= "width:170px;height:170px;" src="img/code.png"  />
-
-				<h5>Languages & Applications</h5>
-                <ul>
-                    <li>C, Python, Java, C#, HTML5/CSS3, Javascript, SQL, XML, Scheme, .NET 4.6.1, Git, Unix Shell </li>
-                    <li>Sublime Text, Vim, WingIDE, Brackets, Windows Powershell, SQL Server 2012/2014 Management Studio, Microsoft Office Suite, DrRacket</li>
-                    <li>Adobe Photoshop, Illustrator, InDesign, Premiere Pro</li>
-                </ul>
-                    
-            </div>
-            
-			<div class="col-sm-4 col-md-4">
-                <img style= "width:170px;height:170px;" src="img/bst.png" title="binary search tree" />
-						<h5>Concepts & Theory</h5>
-                <ul>
-                    <li>Object Oriented and functional programming</li>
-                    <li>Data structures and ADTs</li>
-                    <li>Search trees and algorithms</li>
-                    <li>Product development life cycle (PDLC)</li>
-                    <li>SQL Database Design and Workings</li>
-                        
-                </ul>
-            </div>
-            
-			<div class="col-sm-4 col-md-4">	
-						<img style= "width:170px;height:170px;" src="img/hobby.png" />
-						<h5>Hobbies & Interests</h5>
-                    <ul><li>HTML/CSS webpage development, UI/UX</li>
-                        <li>Architectural 3D Design <a target="_blank" href="pics.html"> (click here to see an old project) </a>, AutoCAD </li>
-                        <li>Audio/Video Editing, Chroma-keying, 3D Animation</li>
-                        <li>Staying updated with new technology 
-                            <a target="_blank" href="steer.pdf">(read my report on the Google Car here)</a></li> 
+		
+    		<div class="container">
+    		    <div class="row">
+    			<hr class="marginbot-50">
+    		</div>
+                
+            <div id="aboutrow" class="row">
+                
+                <div class="col-sm-4 col-md-4">
+    				        <img style= "width:170px;height:170px;" src="img/code.png"  />
+                    <h5>Languages & Applications</h5>
+                    <ul>
+                        <li>Excellent experience and proficiency with C, C#, ASP.NET, Javascript, SQL, HTML/CSS, Git/SVN, Shell. Experience with AWS Stack (EC2, RDS), Python, Scheme/Racket, Swift </li>
+                        <li>Visual Studio, SQL Server 2008/2012/2014, Oracle, VirtualBox, VMWare/VSphere, Vim, Sublime, WingIDE, Brackets, Windows Powershell, LINQ, DrRacket</li>   
                     </ul>
+                </div>
+                
+    			     <div class="col-sm-4 col-md-4">
+                    <img style= "width:170px;height:170px;" src="img/bst.png" title="binary search tree" />
+    				        <h5>Concepts & Theory</h5>
+                    <ul>
+                        <li>Object Oriented and functional programming</li>
+                        <li>Data structures and ADTs</li>
+                        <li>Search trees and algorithms</li>
+                        <li>Product development life cycle (PDLC)</li>
+                        <li>SQL Database Design and Workings</li>      
+                    </ul>
+                </div>
+                
+    			<div class="col-sm-4 col-md-4">	
+    				<img style= "width:170px;height:170px;" src="img/hobby.png" />
+    					<h5>Hobbies & Interests</h5>
+                        <ul><li>HTML/CSS webpage development, UI/UX</li>
+                            <li>Architectural 3D Design, AutoCAD, Audio/Video Editing, Chroma-keying, 3D Animation</li>
+                            <li>Adobe Photoshop, Illustrator, InDesign, Premiere Pro</li>
+                            <li>Staying up to date with exciting technology <a target="_blank" href="steer.pdf">(read my report on the Google Car here)</a></li> 
+                        </ul>
+                </div>
             </div>
-            
-            </div>		
-        </div>
+
         </section>  
-    
     
     <section id="resume" class="home-section text-center">
         
@@ -173,6 +138,17 @@
         
         <div class= "worktitle">
             <img class="lines" style= "width:26px;height:40px;" src="img/lines.png" align="left">
+            <h4>Systems Developer, <span style="color:#B6B6B6">Tenzing</span></h4> 
+            <ul>
+                 <li>Developed ASP.NET Core Windows service to monitor client backup jobs and trigger Cherwell ticket creation and internal-customer notification upon disasters and job failures. SQL server database with integration to several api, most importantly Cherwell api</li> 
+                 <li>Created Backup Management ASP.NET 4.6MVC application in Tenzing Customer Service Center for viewing of client backup usage, commit level requests, approvals of requests by account managers, and overall backup management. Web application with WCF endpoints and SQL server database</li> 
+                 <li>Deployments on AWS EC2 Elastic Beanstalk instances</li>
+                 <li>Worked heavily with ASP.NET developing desktop and web applications, as well as services in an Agile team. Javascript, JQuery, HTML/CSS, Razor, C# / ASP.NET, Git</li>  
+            </ul>
+        </div>
+
+        <div class= "worktitle">
+            <img class="lines" style= "width:26px;height:40px;" src="img/lines.png" align="left">
             <h4>Quality Assurance Analyst/ Developer, <span style="color:#B6B6B6">Asigra Inc</span></h4> 
             <ul>
                  <li>Functionality and regression testing for Asigra Cloud Backup Applications in VMware/VSphere virtualization environments, on Windows, FreeBSD, CentOS systems </li>  
@@ -180,24 +156,13 @@
                  <li>Developed Powershell scripts in PowerCLI for automation of Virtual Machine creation (mass-deployment), and XML-file creation for each created machine, in order to be processed by Asigra Applications</li>  
             </ul>
         </div>
-        
+                
         <div class= "worktitle">
             <img class="lines" style= "width:26px;height:40px;" src="img/lines.png" align="left">
-            <h4>Graphics Co-Editor <span style="color:#B6B6B6">Fenton Films</span></h4>
+            <h4>IT/Technology Team Intern<span style="color:#B6B6B6">AH Institute of Canada</span></h4>
             <ul>
-                <li>Website UI/UX Design, design of company logo, cards </li>
-                <li>Assisted in cinematography, editing in Adobe Premiere Pro, 3D graphics</li>
-            
-            </ul>
-        </div>
-        
-        <div class= "worktitle">
-            <img class="lines" style= "width:26px;height:40px;" src="img/lines.png" align="left">
-            <h4>Library Database Assistant <span style="color:#B6B6B6">AH Institute of Canada</span></h4>
-            <ul>
-                <li>Implemented ISBN lookup system in aging library system with the use of SQL databases and queries to digitize tracking</li>
-                <li>Managed and maintained library database system, taught the software to gother workers</li>
-            
+                <li>Implemented ISBN lookup system in aging library system with the use of SQL database and queries to digitize tracking</li>
+                <li>Managed and maintained database system with simple frontend UI in ASP.NET web application to display availability to external customers</li>
             </ul>
         </div>
         
@@ -307,9 +272,6 @@
                             <li>
                                 <a target="_blank" href="https://instagram.com/hamzausmani_" class="btn-social btn-outline">  
                                     <i class="fa fa-fw fa-instagram"></i></a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="https://ca.linkedin.com/in/usmanihamza" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
                             </li>
                             
                         </ul>
