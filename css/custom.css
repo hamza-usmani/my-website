@@ -1,62 +1,235 @@
-@import url('http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Montserrat:700|Merriweather:400italic');
 
-/* Global Styles */
-
-html,
-body {
-    width: 100%;
-    height: 100%;
-}
-
-body {
-    /*font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;*/
+/*  Global */ 
+body{ 
+    margin:0; 
     font-family: Montserrat,sans-serif;
     letter-spacing: 1px;
-   
-}
+    overflow-x: hidden; 
+} 
 
-.text-vertical-center {
-    display: table-cell;
+.section-heading h2 {
+	font-size: 60px;
+    font-weight: 700;
+    color: whitesmoke;
     text-align: center;
-    vertical-align: middle;
+    padding-top: 0.5em;
+    text-transform: uppercase;
 }
 
- a {
-     color: dimgray;
-    margin: 0;
-    padding: 0;
-    font-size: 4.1em;
-    font-weight: 700; 
-     -o-transition:.5s;
-   -ms-transition:.5s;
-   -moz-transition:.5s;
-   -webkit-transition:.5s;
-    transition:.5s;
+
+/* Navigation */
+.navbar-brand {
+    height: 40px;
+    padding: 5px 15px;
+    font-size: 28px;
+    line-height: 1em;
+    font-weight: 700;
 }
 
-a:hover {
-    color:lightgray;
+#navigation a:hover{
+    transition: 0.4s;
+}
+
+/* Intro Section */
+canvas{ 
+    display: block; 
+    vertical-align: bottom; 
+} 
+
+/* ---- particles.js container ---- */ 
+#particles-js{ 
+    position:relative; 
+    width: 100%; 
+    height: 100%; 
+    background-color: #383a52; 
+    background-image: url(""); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: 50% 50%; 
+} 
+
+.panel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    color: whitesmoke;
+}
+
+@media only screen and (min-width: 575px) {
+    .panel .headshot{
+        float: right;
+    }
+    .panel .name-title {
+        text-align: left;
+    }
+}
+
+.panel h1{
+    font-size: 4em;
+    display: inline-block;
+}
+
+.panel a{
+    padding-right: 1.5em;
+    color: whitesmoke;
+}
+.panel a:hover{
+    color: darkgrey;
+    transition: 0.3s;
+}
+
+
+.headshot{
+    width:193px; 
+    height:180px;
+    border: 10px solid #d7dbe2;
+    border-radius: 100%;
+    position: relative;
+    text-align: center;
+}
+
+/* Summary of Skills section */
+#skills{
+    font-size: 14px;
+    font-family: 'Lato',sans-serif;
+	font-weight: 300;
+    color: #666;
+    
+    background: #383a52;
+    background: -moz-linear-gradient(top, #383a52 0%, #444563 100%);
+    background: -webkit-linear-gradient(top, #383a52 0%,#444563 100%);
+    background: linear-gradient(to bottom, #383a52 0%,#444563 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#383a52', endColorstr='#444563',GradientType=0 );
+}
+
+#skills .row{
+    padding: 0 5% 0 5%;
+}
+
+#skills .col-lg{
+    text-align: center;
+    line-height: 180%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #f1f0f0;
+    margin: 2em;
+}
+
+#skills ul{
+    padding-bottom: 1em;
+    text-align: left;
+}
+
+#skills li{
+    padding-top: 1em;
+}
+
+#skills a:hover{
+    color: lightgrey;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* Projects section */
+#projects{
+    background: #444563;
+    background: -moz-linear-gradient(top, #444563 0%, #5f6589 100%);
+    background: -webkit-linear-gradient(top, #444563 0%,#5f6589 100%);
+    background: linear-gradient(to bottom, #444563 0%,#5f6589 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#444563', endColorstr='#5f6589',GradientType=0 );
+    padding: 3em 6% 10% 6%;
+}
+
+#projects p{
+    font-size: 14px;
+    font-weight: 200;
+}
+
+#projects img{
+    height: auto;
+    width: 90%;
+}
+
+#projects a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+#projects a:hover{
+    text-decoration: none;
+    color: darkgrey;
+    transition: 0.3s;
+}
+
+.quickplan-row{
+    padding-top: 2em;
+}
+
+.quickplan-details{
+    color: whitesmoke;
+}
+
+@media only screen and (max-width: 990px) {
+    .quickplan-img{
+        text-align: center;
+    }
+}
+
+.pokemon-row{
+    padding-top: 5em;
+    color: whitesmoke;
+}
+
+.pokemon-pics{
+    height: 400px;
+}
+@media only screen and (min-width: 770px) and (max-width: 990px) {
+    .pokemon-pics{
+        margin-bottom: 7em;
+    }
+}
+
+.carousel-inner{
+    border: 8px solid #e5e5e5;
+}
+
+.quadris-row{
+    margin-top: 4em;
+    color: whitesmoke;
+}
+
+.other-projects a{
+    margin-top: 3em;
+    color: #9d9fcc;
+}
+.other-projects a:hover{
+    color: #28293f;
+    transition: 0.5s;
     text-decoration: none;
 }
 
-p {
-    
-    color: gray;
-    font-size: 1.2em;
-    font-family: 'Lato',sans-serif;
+
+/* Experience section */
+#experience{
+    padding: 3em 6% 10% 6%;
+    margin-right: 5%;
+    background-color: #f1f0f0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 20px 20px rgba(0, 0, 0, 0.19);
 }
 
-
-/* Header */
-
-.header {
-    display: table;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background: url(../img/bg.jpg) no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+#experience h2{
+    color: #3e4246 !important;
 }
+
+#experience ul{
+    font-size: 14px;
+    color: #4f4f4f;
+    display: block;
+    line-height: 180%;
+}
+
+.worktitle{
+    padding-top: 30px;
+}
+

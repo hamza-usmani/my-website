@@ -1,97 +1,66 @@
-<!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="Hamza Usmani" >       
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-        <link rel="manifest" href="/manifest.json">
-        <meta name="theme-color" content="#ffffff">
-        <title>Home</title>
-        
-        <script src="js/jquery.js"></script>
-        <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-        <link href="css/style.css" rel="stylesheet">
-        <link href="css/main.css" rel="stylesheet">
-        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-          ga('create', 'UA-90921614-1', 'auto');
-          ga('send', 'pageview');
-        </script>
-      
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="Hamza Usmani" >       
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <title>Home</title>
     
-     <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
-        
-         <div id="loader-wrapper">
-			<div id="loader"></div>
-			<div class="loader-section section-left"></div>
-            <div class="loader-section section-right"></div>
-		</div>
-         
-        <section id= "topbar">
-            <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-                <div class="container-fluid">
-                    <div class="navbar-header page-scroll">
-                        <button type="button" class="navbar-toggle">
-                            <i class="fa fa-bars"></i>
-                        </button>
-                        <a class="navbar-brand" href="index.html">
-                             Hamza Usmani 
-                        </a>
-                    </div>
-                    <div class="collapse navbar-collapse navbar-main-collapse  navbar-right fixed-nav-bar">
-                          <ul class="nav navbar-nav">
-                            <li class="active"><a class="smoothScroll" href="#intro">Home</a></li>
-                            <li><a class="smoothScroll" href="#about">About</a></li>
-                            <li><a class="smoothScroll" href="#resume">Resume</a></li>
-                            <li><a class="smoothScroll" href="#portfolio">Projects</a></li>
-                            <li><a class="smoothScroll" href="#contact">Contact</a></li>
-                          </ul>
-                    </div>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+
+<body>
+    <section id= "navigation">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand smoothScroll" href="#intro">HAMZA USMANI</a>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link active smoothScroll" href="#intro">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link smoothScroll" href="#skills">Skills</a>
+                    <a class="nav-item nav-link smoothScroll" href="#projects">Projects</a>
+                    <a class="nav-item nav-link smoothScroll" href="#experience">Experience</a>
                 </div>
-            </nav> 
-        </section>
-         
-        <section id="intro" class="intro">
-            <div class="face">
-                <img style= "width:193px; height:180px;" class="head" src="img/head.png"/>  
             </div>
             
-            <div class="logo">   
-            <img style= "width:400px;height:400px;" src= "img/logo.png" />
-               <p>Computer Science Student at the <a href="https://cs.uwaterloo.ca/"> University of Waterloo </a> <br> Software and Front-end Developer <br></p>
-                
-               <div class= "sites">
-                <p><a target="_blank" href="http://www.github.com/hamza-usmani"> GitHub (Code) </a> <br>
-                <a target="_blank" href="http://www.behance.net/hamzausmani"> Behance (Current Design Projects)</a>
-               </p>
+        </nav>
+    </section>
+    
+    <section id="intro">
+        <!-- particles.js container -->
+        <div id="particles-js"> </div>
+        <div class="panel">
+            <div class="row">
+                 <div class="col-sm-5">
+                    <img class="headshot" src="img/head.png"/>
+                </div>
+                 <div class="col-sm-7 name-title">
+                    <h1>Hamza Usmani</h1>
+                     <p>Full-Stack Developer</p>
+                     <p>Computer Science (University of Waterloo)</p>
+                     
+                     <h4>
+                     <a target="_blank" href="https://www.github.com/hamza-usmani" class="btn-social btn-outline social"><i class="fab fa-github"></i></a>
+                     
+                     <a target="_blank" href="https://www.linkedin.com/in/usmanihamza" class="btn-social btn-outline social"><i class="fab fa-linkedin-in"></i></a>
+                         
+                     </h4>
+                     
+                </div>
             </div>
-            </div>
-            
-            <div class="page-scroll">
-                <a href="#about" class="smoothScroll btn btn-circle"> 
-               <i class="fa fa-angle-double-down animated"></i>
-                </a>
-            </div>
-        </section>  
-         
-        <section id="about" class="home-section text-center bg-gray">
-				<div class="section-heading"><h2>About</h2></div>
-    		<div class="container">
-    		    <div class="row">
-    			<hr class="marginbot-50">
-    		</div>
-                
-            <div id="aboutrow" class="row">
-                
-                <div class="col-sm-4 col-md-4">
-    				        <img style= "width:170px;height:170px;" src="img/code.png"  />
+        </div>
+    </section>    
+    
+    <section id="skills"> 
+        <div class="section-heading"><h2>About</h2></div>
+        <hr class="star-primary">
+        <div class="row">
+                <div class="col-lg">
+                    <img style= "width:180px;height:170px;" src="img/code.png"  />
                     <h5>Languages & Applications</h5>
                     <ul>
                         <li>Excellent experience and proficiency with C, C#, ASP.NET, Javascript, SQL, HTML/CSS, Git/SVN, Shell. Experience with AWS Stack (EC2, RDS), Python, Scheme/Racket, Swift </li>
@@ -99,7 +68,7 @@
                     </ul>
                 </div>
                 
-    			     <div class="col-sm-4 col-md-4">
+    			     <div class="col-lg">
                     <img style= "width:170px;height:170px;" src="img/bst.png" title="binary search tree" />
     				        <h5>Concepts & Theory</h5>
                     <ul>
@@ -111,9 +80,9 @@
                     </ul>
                 </div>
                 
-    			<div class="col-sm-4 col-md-4">	
+    			<div class="col-lg">	
     				<img style= "width:170px;height:170px;" src="img/hobby.png" />
-    					<h5>Hobbies & Interests</h5>
+    					<h5>Other Interests</h5>
                         <ul><li>HTML/CSS webpage development, UI/UX</li>
                             <li>Architectural 3D Design, AutoCAD, Audio/Video Editing, Chroma-keying, 3D Animation</li>
                             <li>Adobe Photoshop, Illustrator, InDesign, Premiere Pro</li>
@@ -121,21 +90,135 @@
                         </ul>
                 </div>
             </div>
-
-        </section>  
+    </section>
     
-    <section id="resume" class="home-section text-center">
+    <section id="projects">
+        <div class="section-heading"><h2>Projects</h2></div>
+        <hr class="star-primary">
         
-        <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Experience</h2>
-                    <hr class="star-primary">
+        <div class="row quickplan-row">
+            
+            <div class="col-lg quickplan-img">
+                <img src="img/quickplan.png" />
+            </div>
+            
+            <div class="col-lg quickplan-details">
+                <a href="https://quickplannow.herokuapp.com/home" target="_blank"><h1>Quickplan</h1></a>
+                <p>
+                A M*EAN (*MySQL, Express, Angular, Node) application developed as an on-the-fly event planning platform. A fully responsive application which features JWT (JSON Web Token) authentication for quick and secure sign-up/login, incorporates Google Maps API, and presents a specifically designed event-calendar. This app allows users to create and share plans, and already hosts over 100 users!
+                <br><br>   
+                Front-end uses Angular5/Typescript 2.5.3 with Bootstrap 4 and Material design. Responsive design allows the app to be functional and presentable on mobile devices. Third-party tools such as Froala Editor, Clipboard Module and Google Maps incorporated into the planning app. Client-side authentication on sign-up/login screens for basic credential checks, HashLocationStrategy used for sharable/viewable links, and HttpClient for calls to api-endpoints.
+                <br><br>   
+                NodeJS (Express Framework) backend which handles authentication and user-data requests. Utilizes Passport for Node (authentication middleware), JWT, and UUID-generation for sharable links, and CORS (Cross Origin Request) to allow HttpClient requests. MySQL database used as the data layer, with sha512-encryption, and Sequelize used as a promise-based ORM. 
+                <br><br> 
+                    
+                <a href="https://quickplannow.herokuapp.com/" target="_blank">
+                <i class="fas fa-globe-americas"></i> Website
+                </a>
+                &nbsp &nbsp
+                <a href="https://github.com/hamza-usmani?utf8=%E2%9C%93&tab=repositories&q=quickplan&type=&language=" target="_blank">
+                <i class="fab fa-github"></i> Github
+                </a>  
+                    
+                </p>
+            </div>
+        </div>
+        
+        <div class="row pokemon-row flex-column-reverse flex-lg-row">
+            <div class="col-lg">
+                <h1>Pokemon in JAVA</h1>
+                <p>
+                A simplified math-themed Pokemon game built in object oriented JAVA applet design. Utilizes Java 2D Graphics library, custom-designed game graphics and map design, as well as 2D arrays for game-mapping. Simple NPCs (non-player characters) in-game as opponents, with randomized algorithms used for battles. 
+                <br><br>
+                Mouse input used for character interaction, JAVA applet dialogues (JOptionPane) used for game outputs, and graphics libraries to draw on JFrame/JPanels.
+                <br><br>    
+                <a href="https://github.com/hamza-usmani/pokemonjava" target="_blank">
+                <i class="fab fa-github"></i> Github
+                </a>    
+                    
+                </p>
+            </div>
+            
+            <div class="col-lg">
+                <div id="carouselExampleIndicators" class="carousel slide pokemon-pics" data-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="d-block w-100" src="img/pokemon/1.jpg">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="img/pokemon/2.jpg">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="img/pokemon/3.jpg">
+                        </div>
+                          <div class="carousel-item">
+                          <img class="d-block w-100" src="img/pokemon/4.jpg">
+                        </div>
+                          <div class="carousel-item">
+                          <img class="d-block w-100" src="img/pokemon/5.jpg">
+                        </div>
+                          <div class="carousel-item">
+                          <img class="d-block w-100" src="img/pokemon/6.jpg">
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
                 </div>
-        </div>    
+            </div> 
+        </div>
         
-        <div class= "worktitle">
-            <img class="lines" style= "width:26px;height:40px;" src="img/lines.png" align="left">
+         <div class="row quadris-row">
+            
+            <div class="col-lg">
+                <img src="img/quadris.png" />
+            </div>
+            
+            <div class="col-lg"> <h1>Quadris</h1>
+                <p>
+                A game similar to Tetris (with modified/new rules) created in C++, using graphics in XWindow for UI. Program utilizes Factory Method Pattern, Observer Pattern, several standard library methods, and inheritance plays a major role in game pieces.
+                <br><br>
+                The design consists of a game board partitioned by cells, in which each cell has a state. This board can contain different types of blocks, which can be any block derived from the virtual block class. Blocks can be rotated both clockwise and counter-clockwise, moved left, right, down and dropped upon user’s request. The Level classes specify different difficulties in which the game can be played. Probabilities involved in block generation are dependent on level as well as the ability to take in a seed for random generation.
+                <br><br>
+                The Levels and the Board classes employ the factory method pattern and the Cells and both Text Display and Graphical Display interact following the observer pattern. The cells behave as the subject meanwhile the other two classes observe and wait to be notified. 
+                <br><br>
+                <a href="https://github.com/hamza-usmani/quadris" target="_blank">
+                <i class="fab fa-github"></i> Github (private repository, contact me for access)
+                </a>   
+                </p>
+            </div>
+        </div>
+        
+         <div class="other-projects row col-6">
+             <a target="_blank" href="https://www.github.com/hamza-usmani"><h4>View other projects on Github <i class="fas fa-angle-double-right"></i></h4></a>
+        </div>
+        
+    </section>
+    
+    <section id="experience"> 
+        <div class="section-heading"><h2>Experience</h2></div>
+        <hr class="star-primary">
+        
+        <div class= "row worktitle">
+            <h4>Software Developer, <span style="color:#B6B6B6">Datafix</span></h4>
+        </div>
+        <div class="row">
+            <ul>
+                <li>Coming Soon</li>
+                <li>Coming Soon</li>
+                <li>Coming Soon</li>
+            </ul>
+        </div>
+        
+        <div class= "row worktitle">
             <h4>Systems Developer, <span style="color:#B6B6B6">Tenzing</span></h4> 
+        </div>
+        <div class="row">
             <ul>
                  <li>Developed ASP.NET Core Windows service to monitor client backup jobs and trigger Cherwell ticket creation and internal-customer notification upon disasters and job failures. SQL server database with integration to several api, most importantly Cherwell api</li> 
                  <li>Created Backup Management ASP.NET 4.6MVC application in Tenzing Customer Service Center for viewing of client backup usage, commit level requests, approvals of requests by account managers, and overall backup management. Web application with WCF endpoints and SQL server database</li> 
@@ -144,9 +227,10 @@
             </ul>
         </div>
 
-        <div class= "worktitle">
-            <img class="lines" style= "width:26px;height:40px;" src="img/lines.png" align="left">
+        <div class= "row worktitle">
             <h4>Quality Assurance Analyst/ Developer, <span style="color:#B6B6B6">Asigra Inc</span></h4> 
+        </div>
+        <div class="row">
             <ul>
                  <li>Functionality and regression testing for Asigra Cloud Backup Applications in VMware/VSphere virtualization environments, on Windows, FreeBSD, CentOS systems </li>  
                  <li>Created Python scripts to automate daily updating and synchronization of certain Asigra Application files (in order to keep the latest development patches)</li>  
@@ -154,124 +238,39 @@
             </ul>
         </div>
                 
-        <div class= "worktitle">
-            <img class="lines" style= "width:26px;height:40px;" src="img/lines.png" align="left">
+        <div class= "row worktitle">
             <h4>Technology Team Intern, <span style="color:#B6B6B6">AH Institute of Canada</span></h4>
+        </div>
+        <div class="row">
             <ul>
                 <li>Implemented ISBN lookup system in aging library system with the use of SQL database and queries to digitize tracking</li>
                 <li>Managed and maintained database system with simple frontend UI Dashboard as ASP.NET web application to display availability to external customers</li>
             </ul>
         </div>
-        
-        <a target="_blank" href="resume.pdf" > 
-            <img id="dot" style= "width:20px;height:20px;" src="img/dot.png" align="left">
-            <h6 id="cv">View full CV</h6>
-        </a>
-        
-    </section>
-         
-     <!-- Portfolio Grid Section -->
-    <section id="portfolio" class="home-section text-center ">
-        
-        <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Projects</h2>
-                    <hr class="star-primary">
-                </div>
-        </div>    
 
-         <div class="container">
-            
-             <div id="pokemon" class="square">
-                 <a>
-                 <div class="square1">
-                     <div class="table">
-                        <div class= "table-cell">
-                            
-                            <h5>Pokemon Emulation</h5>
-                             <ul>
-                                 <li> A JAVA Applet that is a simplified Pokemon game</li>
-                                 <li>Use of complex 2D arrays for mapping, use of JAVA graphics heavily </li>
-                                 <li>Mouse and keyboard control implementation for interaction</li>  
-                                 <li>Simple NPC characters for opponent battles</li>
-                            </ul>
-                            
-                            
-                        </div>
-                     </div>
-                 </div>
-                 </a>     
-             </div> 
-             
-             <div id="shopping" class="square">
-                 <a>
-                 <div class="square1">
-                     <div class="table">
-                        <div class="table-cell" >
-                            <h5>Rental Screen Program</h5>
-                            <ul>
-                                 <li>Inventory purchasing system, JAVA Applet, created for a design project</li>
-                                 <li>Allows users to search through a (small) catalogue, add and delete games to their cart</li>
-                                 <li>Graphics based, loading and saving features</li>  
-                                 <li>Searching algorithms coded and implemented</li>
-                            </ul>
-                        </div>
-                     
-                     </div>
-                 </div>  
-                 </a>     
-             </div> 
-             
-             <div id="zippy" class="square">
-                 <a>
-                 <div class="square1">
-                     <div class="table">
-                        <div class="table-cell">
-                            <h5>Zippy</h5>
-                            <ul>
-                                 <li>Small Python3 Program used for dealing with compressed files</li>
-                                 <li>Test Functionality:</li>
-                                 <li>Extract a specific zip from a dir</li>
-                                 <li>Zip certain filename (extension) files from a dir</li>  
-                            </ul>
-                        </div>
-                     </div>
-                 </div>     
-                 </a>
-                </div> 
-                    
-        </div>
-        
-            <div id="allproj" class="row">
-                <h6><a target="_blank" href="http://www.github.com/hamza-usmani">For ALL projects, visit my GitHub</a> </h6>
-            </div>
-        
     </section>
+</body>
     
-    <section id="contact" class="home-section text-center bg-gray">
-            <h3>Contact me at <a href="mailto:hamza.usmani@uwaterloo.ca" target="_top"> hamza.usmani@uwaterloo.ca </a></h3>
-            <h4>Or find me on the web
-                <a target="_blank" href="www.github.com/hamza-usmani" class="btn-social btn-outline social"><i class="fa fa-fw fa-github"></i></a>
-                <a target="_blank" href="www.linkedin.com/in/usmanihamza" class="btn-social btn-outline social"><i class="fa fa-fw fa-linkedin"></i></a>
-            </h4>
-    </section>
-    
-       
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-	<script src="js/main.js"></script>
 
-     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-    
-    <!-- Smoothscroll -->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/smoothscroll.js"></script>
-        
-    <!-- Plugin JavaScript -->
-    <script src="js/classie.js"></script>
 
-        
-    </body>
-    </html>
+<!-- css -->
+<link href="css/custom.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     
+<!--js --> 
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/smoothscroll.js"></script>
+<script src="js/particles.js"></script> 
+<script src="js/custom.js"></script>
+    
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-90921614-1', 'auto');
+  ga('send', 'pageview');
+</script>
+    
+</html>
