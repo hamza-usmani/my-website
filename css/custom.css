@@ -212,7 +212,7 @@ canvas{
 
 /* Experience section */
 #experience{
-    padding: 3em 6% 10% 6%;
+    padding: 3em 6% 3% 6%;
     margin-right: 5%;
     background-color: #f1f0f0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 20px 20px rgba(0, 0, 0, 0.19);
@@ -233,3 +233,19 @@ canvas{
     padding-top: 30px;
 }
 
+#contact{
+    padding-top: 30px;
+    background-color: #444563;
+    height: 100px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+#contact a{
+    color: ghostwhite;
+}
+
+#contact a:hover{
+    color: lightgrey;
+    text-decoration: none;
+}
