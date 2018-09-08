@@ -66,6 +66,11 @@ canvas{
         text-align: left;
     }
 }
+@media only screen and (max-width: 770px) {
+    .panel {
+        padding-top: 3em;
+    }
+}
 
 .panel h1{
     font-size: 4em;
@@ -220,6 +225,17 @@ canvas{
 
 #experience h2{
     color: #3e4246 !important;
+}
+
+@media only screen and (max-width: 770px) {
+    #experience h2{
+        font-size: 40px;
+    }
+    
+    #experience li{
+        font-size: 0.9em;
+        padding-right: 1em;
+    }
 }
 
 #experience ul{
