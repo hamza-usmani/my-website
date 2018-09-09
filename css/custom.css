@@ -144,7 +144,7 @@ canvas{
     background: -webkit-linear-gradient(top, #444563 0%,#5f6589 100%);
     background: linear-gradient(to bottom, #444563 0%,#5f6589 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#444563', endColorstr='#5f6589',GradientType=0 );
-    padding: 3em 6% 10% 6%;
+    padding: 3em 6% 5% 6%;
 }
 
 #projects p{
