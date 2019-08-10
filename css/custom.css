@@ -96,54 +96,13 @@ canvas{
     text-align: center;
 }
 
-/* Summary of Skills section */
-#skills{
-    font-size: 14px;
-    font-family: 'Lato',sans-serif;
-	font-weight: 300;
-    color: #666;
-    
+/* Projects section */
+#projects{
     background: #383a52;
     background: -moz-linear-gradient(top, #383a52 0%, #444563 100%);
     background: -webkit-linear-gradient(top, #383a52 0%,#444563 100%);
     background: linear-gradient(to bottom, #383a52 0%,#444563 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#383a52', endColorstr='#444563',GradientType=0 );
-}
-
-#skills .row{
-    padding: 0 5% 0 5%;
-}
-
-#skills .col-lg{
-    text-align: center;
-    line-height: 180%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color: #f1f0f0;
-    margin: 2em;
-}
-
-#skills ul{
-    padding-bottom: 1em;
-    text-align: left;
-}
-
-#skills li{
-    padding-top: 1em;
-}
-
-#skills a:hover{
-    color: lightgrey;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-/* Projects section */
-#projects{
-    background: #444563;
-    background: -moz-linear-gradient(top, #444563 0%, #5f6589 100%);
-    background: -webkit-linear-gradient(top, #444563 0%,#5f6589 100%);
-    background: linear-gradient(to bottom, #444563 0%,#5f6589 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#444563', endColorstr='#5f6589',GradientType=0 );
     padding: 3em 6% 5% 6%;
 }
 
@@ -165,6 +124,30 @@ canvas{
     text-decoration: none;
     color: darkgrey;
     transition: 0.3s;
+}
+
+.new-badge{
+    border-radius: 30px;
+    color: #4f4f4f;
+    font-size: 14px;
+}
+
+.ll-row{
+    padding-bottom:2em;
+    padding-top: 2em;
+}
+
+.ll-details{
+    color: whitesmoke;
+}
+
+.vid-class{
+    padding-bottom: 2em;
+}
+
+.ll-video{
+    width: 88%;
+    height: 300px;
 }
 
 .quickplan-row{
@@ -200,7 +183,7 @@ canvas{
 }
 
 .quadris-row{
-    margin-top: 4em;
+    margin-top: 3em;
     color: whitesmoke;
 }
 
@@ -245,8 +228,23 @@ canvas{
     line-height: 180%;
 }
 
+.work-item{
+    margin-bottom: 35px;
+}
+
 .worktitle{
     padding-top: 30px;
+}
+
+.city{
+    color: #a5a5a5;
+    font-size: 20px;
+}
+
+.company-name img{
+    height: 50px;
+    object-fit: contain;
+    padding-top: 5px;
 }
 
 #contact{

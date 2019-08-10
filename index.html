@@ -22,7 +22,6 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ml-auto">
                     <a class="nav-item nav-link active smoothScroll" href="#intro">Home <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link smoothScroll" href="#skills">Skills</a>
                     <a class="nav-item nav-link smoothScroll" href="#projects">Projects</a>
                     <a class="nav-item nav-link smoothScroll" href="#experience">Experience</a>
                 </div>
@@ -42,8 +41,8 @@
                     </div>
                      <div class="col-sm-7 name-title">
                         <h1>Hamza Usmani</h1>
-                         <p>Full-Stack Developer</p>
-                         <p>Computer Science (University of Waterloo)</p>
+                         <p>Technical Product Manager</p>
+                         <p>Computer Science @ University of Waterloo</p>
                          
                          <h4>
                          <a target="_blank" href="https://www.github.com/hamza-usmani" class="btn-social btn-outline social"><i class="fab fa-github"></i></a>
@@ -58,53 +57,36 @@
         </div>
     </section>    
     
-    <section id="skills"> 
-        <div class="section-heading"><h2>About</h2></div>
-        <hr class="star-primary">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg">
-                    <img style= "width:180px;height:170px;" src="img/code.png"  />
-                    <h5>Languages & Applications</h5>
-                    <ul>
-                        <li>Excellent experience and proficiency with C++/C, C#, ASP.NET/Core, Javascript (NodeJs, Express, Jquery), Angular 4/5, SQL Databases, LINQ, Sequelize ORMs, MongoDB, HTML/CSS/SCSS, Git/Gitlab/Team Foundation Server, MATLAB, Shell/Bash </li>
-                        <li>Experience with AWS Stack (EC2, RDS), Azure Deployments, Python 3, Racket and Swift (iOS Applications)</li>
-                        <li>VSCode, Visual Studio, Postman, SQL Server 2008/2012/2014, MySQL Workbench, Oracle, VirtualBox, VMWare/VSphere, Vim, XCode, Sublime, WingIDE, Brackets, Powershell, DrRacket</li>   
-                    </ul>
-                </div>
-                
-    			     <div class="col-lg">
-                    <img style= "width:170px;height:170px;" src="img/bst.png" title="binary search tree" />
-    				        <h5>Concepts & Theory</h5>
-                    <ul>
-                        <li>Knowledge of data structures, ADTs, self-balacing trees, dictionaries, hashing/hash tables, pattern matching, regular expressions, relational databases</li>
-                        <li>Algorithm design: process, time-complexity/runtime proofs, correctness, NP-hard problems</li>
-                        <li>Extensive knowledge of sorting algorithms (Quicksort, Heapsort, Radix, Bucket Sort.etc), randomized and compression algorithms (Huffman, RLE, Lempel-Ziv-Welch, Burrows-Wheeler)</li>
-                        <li>Google Page Rank, 2D/3D modelling with ODEs, 2D/2D image compression and Fourier Transforms, audio splitting</li>
-                        <li>Product development life cycle (PDLC), Agile and Waterfall approaches</li> 
-                    </ul>
-                </div>
-                
-    			<div class="col-lg">	
-    				<img style= "width:170px;height:170px;" src="img/hobby.png" />
-    					<h5>Other Interests</h5>
-                        <ul>
-                            <li>Architectural 3D Design, AutoCAD, Audio/Video Editing, Chroma-keying, 3D Animation</li>
-                            <li>Graphics, Photo/Video editing, Text-creation in Adobe Photoshop, Illustrator, InDesign, Premiere Pro</li>
-                            <li>Staying up to date with exciting technology <a target="_blank" href="steer.pdf">(read my report on the Google Car here)</a></li>
-                            <li>Written a complete compiler with tokenization, tree traversal, type-checking, and context-sensitive syntax analysis</li>
-                            <li>Currently learning and developing using REACT, and about Machine Learning and Artificial Intelligence concepts </li>
-                        </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    
     <section id="projects">
         <div class="section-heading"><h2>Projects</h2></div>
         <hr class="star-primary">
         
         <div class="container-fluid">
+
+            <div class="row ll-row flex-column-reverse flex-lg-row">
+                <div class="col-lg ll-details">
+                    <h1>LessonLearned
+                    <span> <button type="button" disabled class="new-badge">NEW</button> </span> </h1>  
+
+                    <p>
+                    Lesson Learned is an Android app where students can find a course-specific tutor for an area of study he/she is having difficulty with.
+                    <br><br>
+                    Managed and developed the app from conceptualization through release. Download on the Google Play Store now!
+                    </p>
+
+                    <a href="https://play.google.com/store/apps/details?id=com.lessonlearned.app" target="_blank">
+                        <i class="fab fa-google-play"></i> Google Play Store
+                    </a>
+
+                </div>
+
+                <div class="col-lg vid-class d-flex justify-content-center">
+                    <iframe class="ll-video"
+                    src="https://www.youtube.com/embed/n2kpGDSb3so" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+
             <div class="row quickplan-row">
                 
                 <div class="col-lg quickplan-img">
@@ -116,7 +98,7 @@
                     <p>
                     A M*EAN (*MySQL, Express, Angular, Node) application developed as an on-the-fly event planning platform. A fully responsive application which features JWT (JSON Web Token) authentication for quick and secure sign-up/login, incorporates Google Maps API, and presents a specifically designed event-calendar. This app allows users to create and share plans, and already hosts over 100 users!
                     <br><br>   
-                    Front-end uses Angular5/Typescript 2.5.3 with Bootstrap 4 and Material design. Responsive design allows the app to be functional and presentable on mobile devices. Third-party tools such as Froala Editor, Clipboard Module and Google Maps incorporated into the planning app. Client-side authentication on sign-up/login screens for basic credential checks, HashLocationStrategy used for sharable/viewable links, and HttpClient for calls to api-endpoints.
+                    Front-end uses Angular5/Typescript 2.5.3 with Bootstrap 4 and Material design. Third-party tools such as Froala Editor, Clipboard Module and Google Maps incorporated into the planning app.
                     <br><br>   
                     NodeJS (Express Framework) backend which handles authentication and user-data requests. Utilizes Passport for Node (authentication middleware), JWT, and UUID-generation for sharable links, and CORS (Cross Origin Request) to allow HttpClient requests. MySQL database used as the data layer, with sha512-encryption, and Sequelize used as a promise-based ORM. 
                     <br><br> 
@@ -190,11 +172,9 @@
                 
                 <div class="col-lg"> <h1>Quadris</h1>
                     <p>
-                    A game similar to Tetris (with modified/new rules) created in C++, using graphics in XWindow for UI. Program utilizes MVC Design, Factory Method Pattern, Observer Pattern, several standard library methods, and has inheritance play a major role in block creation.
+                    A game similar to Tetris (with modified/new rules) created in C++, using graphics in XWindow for UI
                     <br><br>
-                    The design consists of a game board partitioned by cells, in which each cell has a state. This board can contain different types of blocks, which can be any block derived from the virtual block class. Blocks can be rotated both clockwise and counter-clockwise, moved left, right, down and dropped upon user’s request. The Level classes specify different difficulties in which the game can be played. Probabilities involved in block generation are dependent on level as well as the ability to take in a seed for random generation.
-                    <br><br>
-                    The Levels and the Board classes employ the factory method pattern and the Cells and both Text Display and Graphical Display interact following the observer pattern. The cells behave as the subject meanwhile the other two classes observe and wait to be notified. 
+                    Important architectural and design patterns used include MVC, Factory and Observer Pattern, as well as several standard libraries. Random block generation with mathematical probabilities and seeds, with several level difficulties and playables.
                     <br><br>
                     <a href="https://github.com/hamza-usmani/quadris" target="_blank">
                     <i class="fab fa-github"></i> Github (private repository, contact me for access)
@@ -206,14 +186,12 @@
              <div class="row pokemon-row flex-column-reverse flex-lg-row">
                  <div class="col-lg">
                     <h1>Breakout!</h1>
-                     <p>Breakout is a game where you have a paddle, a ball, and levels with breaks that you have to break by hitting with the ball! In this implementation of Breakout in C++, there are 2 game types:
-                    <br><br>
-                     In basic mode the first level starts easy and each block is worth 1 point. After every 5 points, the speed of the ball increaes by 1. Each level after is randomly generated with a similar difficulty to the first.In advanced mode includes stronger bricks which may take more than 1 hit to break and is for more experienced players.
+                     <p>A game where you have a paddle, a ball, and levels with bricks that you have to break with the ball!
                     <br><br>
                     The game uses C++ and Xlib for graphics, as well as techniques such as an event loops, double buffering, inheritence, and is single threaded.
                      <br><br>
                      <a href="https://github.com/hamza-usmani/breakoutGame" target="_blank">
-                    <i class="fab fa-github"></i> Github (private repository due to University policy, contact me for access)
+                    <i class="fab fa-github"></i> Github (private repository, contact me for access)
                     </a> 
                     </p>
                  </div>
@@ -232,48 +210,50 @@
         <div class="section-heading"><h2>Experience</h2></div>
         <hr class="star-primary">
         <div class="container-fluid">
-            <div class= "row worktitle">
-                <h4>Software Developer, <span style="color:#B6B6B6">Datafix</span></h4>
-            </div>
-            <div class="row">
-                <ul>
-                    <li>Implemented new components in Angular 4/Typescript 2 for the Voter Registration platform, with server-side improvements on an ASP .Net Core/SQL Server backend. Additions included a dashboard which displayed user-usages and services, with api-calls and integration with Google services/Maps, 0Auth authentication</li>
-                    <li>Developed a Chrome/Firefox browser extension which utilizes Native Messaging and ran as a content script to read, format and save Voter Registration information. Browser extensions written in Javascript, desktop communication software written as an ASP .Net desktop application, and bootstrapped using WIX Installer</li>
-                    <li>Full-stack development for the VoterView and MyVote applications, in ASP .Net Core 2.0, ASP .Net MVC 5, and Javascript, with deployment testing for applications done on Azure resources</li>
-                </ul>
-            </div>
             
-            <div class= "row worktitle">
-                <h4>Systems Developer, <span style="color:#B6B6B6">Tenzing</span></h4> 
-            </div>
-            <div class="row">
-                <ul>
-                     <li>Developed ASP.NET Core Windows service to monitor client backup jobs and trigger Cherwell ticket creation and internal-customer notification upon disasters and job failures. SQL server database with integration to several api, most importantly Cherwell api</li> 
-                     <li>Created Backup Management ASP.NET 4.6MVC application in Tenzing Customer Service Center for viewing of client backup usage, commit level requests, approvals of requests by account managers, and overall backup management. Web application with WCF endpoints and SQL server database</li> 
-                     <li>Deployments on AWS EC2 Elastic Beanstalk instances</li>
-                     <li>Worked heavily with ASP.NET developing desktop and web applications, as well as services in an Agile team. Javascript, JQuery, HTML/CSS, Razor, C# / ASP.NET, Git</li>  
-                </ul>
+            <div class="work-item">
+                <div class= "row worktitle d-flex justify-content-center">
+                    <h4>Product Manager, <span class="city">San Fracisco</span></h4>
+                </div>
+                <div class="row company-name d-flex justify-content-center">
+                    <img src="img/meraki.png" />
+                </div>
             </div>
 
-            <div class= "row worktitle">
-                <h4>Quality Assurance Analyst/ Developer, <span style="color:#B6B6B6">Asigra Inc</span></h4> 
+            <div class="work-item">
+                <div class= "row worktitle d-flex justify-content-center">
+                    <h4>Connected Devices Engineer, <span class="city">Toronto</span> </h4>
+                </div>
+                <div class="row company-name d-flex justify-content-center">
+                    <img src="img/accedo.png" />
+                </div>
             </div>
-            <div class="row">
-                <ul>
-                     <li>Functionality and regression testing for Asigra Cloud Backup Applications in VMware/VSphere virtualization environments, on Windows, FreeBSD, CentOS systems </li>  
-                     <li>Created Python scripts to automate daily updating and synchronization of certain Asigra Application files (in order to keep the latest development patches)</li>  
-                     <li>Developed Powershell scripts in PowerCLI for automation of Virtual Machine creation (mass-deployment), and XML-file creation for each created machine, in order to be processed by Asigra Applications</li>  
-                </ul>
+
+            <div class="work-item">
+                <div class= "row worktitle d-flex justify-content-center">
+                    <h4>Software Developer, <span class="city">Toronto</span></h4>
+                </div>
+                <div class="row company-name d-flex justify-content-center">
+                    <img src="img/datafix.png" />
+                </div>
             </div>
-                    
-            <div class= "row worktitle">
-                <h4>Technology Team Intern, <span style="color:#B6B6B6">AH Institute of Canada</span></h4>
+            
+            <div class="work-item">
+                <div class= "row worktitle d-flex justify-content-center">
+                    <h4>Systems Engineer, <span class="city">Toronto</span></h4>
+                </div>
+                <div class="row company-name d-flex justify-content-center">
+                    <img src="img/tenzing.png" />
+                </div>
             </div>
-            <div class="row">
-                <ul>
-                    <li>Implemented ISBN lookup system in aging library system with the use of SQL database and queries to digitize tracking</li>
-                    <li>Managed and maintained database system with simple frontend UI Dashboard as ASP.NET web application to display availability to external customers</li>
-                </ul>
+            
+            <div class="work-item">
+                <div class= "row worktitle d-flex justify-content-center">
+                    <h4>QA Developer & Analyst, <span class="city">Toronto</span> </h4>
+                </div>
+                <div class="row company-name d-flex justify-content-center">
+                    <img src="img/asigra.png" />
+                </div>
             </div>
         </div>
     </section>
